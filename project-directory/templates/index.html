@@ -16,10 +16,13 @@
         {% for task in tasks %}
         <li>
             <span class="{{ 'completed' if task.completed }}">{{ task.title }}</span>
-            <a href="/complete/{{ task.id }}">[Mark {{ 'Incomplete' if task.completed else 'Complete' }}]</a>
-            <a href="/delete/{{ task.id }}">[Delete]</a>
+            <div>
+                <a href="/complete/{{ task.id }}">[Mark {{ 'Incomplete' if task.completed else 'Complete' }}]</a>
+                <a href="/delete/{{ task.id }}">[Delete]</a>
+            </div>
         </li>
         {% endfor %}
     </ul>
+    
 </body>
 </html>

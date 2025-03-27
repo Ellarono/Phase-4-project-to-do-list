@@ -26,7 +26,8 @@ button {
     border-radius: 5px;
     cursor: pointer;
     font-family: 'Times New Roman', Times, serif;
-    text-transform: capitalize;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 button:hover {
     background-color: #db600e;
@@ -88,5 +89,36 @@ a {
 }
 
 a:hover {
-    color: #0056b3;
+    color: #28333f;
+}
+.button {
+    padding: 0.4em 0.8em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s, transform 0.2s;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.button-done {
+    background-color: #036d2f;
+    color: white;
+}
+
+.button-done:hover {
+    background-color: #4ca772;
+    transform: scale(1.05);
+}
+
+.button-delete {
+    background-color: #ffc400;
+    color: rgb(107, 0, 0);
+}
+
+.button-delete:hover {
+    background-color: #ff6600;
+    transform: scale(1.05);
 }

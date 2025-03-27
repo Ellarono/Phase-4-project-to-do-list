@@ -17,8 +17,10 @@
         <li>
             <span class="{{ 'completed' if task.completed }}">{{ task.title }}</span>
             <div>
-                <a href="/complete/{{ task.id }}">[Mark {{ 'Incomplete' if task.completed else 'Complete' }}]</a>
-                <a href="/delete/{{ task.id }}">[Delete]</a>
+                <a href="/complete/{{ task.id }}" class="button button-done">
+                    Mark {{ 'Incomplete' if task.completed else 'Done' }}
+                </a>
+                <a href="/delete/{{ task.id }}" class="button button-delete">Delete</a>
             </div>
         </li>
         {% endfor %}
